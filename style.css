@@ -14,18 +14,18 @@ body {
 /*  <<<<<-------------- Adding graphics ------------------>>>>>> */
 
 .fo snap1 {
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   background: linear-gradient(to bottom right, #ce9ffc, #7367f0);
   position: absolute;
-  top: -60px;
-  left: 65px;
+  top: 10%;
+  left: 11%;
   border-radius: 50%;
   z-index: -11;
 }
 .fo snap2 {
   width: 200px;
-  height: 200px;
+  height: 10rem;
   background: linear-gradient(to bottom left, #fc466b, #f5e50e);
   position: absolute;
   top: 40%;
@@ -38,10 +38,9 @@ body {
   border-radius: 50%;
   background: #0f0;
   position: absolute;
-  top: 57%;
+  top: 30%;
   right: 15%;
 }
-
 
 /* <<<<<<< ---------- usual transparent form--------------->>>>>>>>>> */
 .form {
@@ -52,6 +51,7 @@ body {
   height: 80vh;
   width: 80%;
   margin: auto;
+  margin-top: 2rem;
   padding: 2rem;
   background: rgba(255, 255, 225, 0.1);
   box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
@@ -69,14 +69,16 @@ body {
 }
 
 .form input {
-  width: 100%;
+  width: 70%;
   padding: 0.7rem;
   border: 1px solid #fff;
   border-radius: 15px;
   background: rgba(255, 255, 225, 0.1);
   font-size: 17px;
+  text-align: center;
   outline: none;
 }
+
 .form input::placeholder {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -100,4 +102,37 @@ body {
   color: #fff;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
+}
+
+@media (max-width: 851px) {
+  .form input {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 15px;
+  }
+  .fo snap1 {
+    top: 1.5rem;
+    width: 7rem;
+    height: 7rem;
+  }
+  .fo snap2 {
+    top: 35%;
+    left: 20%;
+    width: 7rem;
+    height: 7rem;
+  }
+  .fo snap3 {
+    display: none;
+  }
+  #button {
+    width: 150px;
+    height: 32px;
+  }
+  .form {
+    height: 95vh;
+    margin-top: 0rem;
+  }
+  .form p {
+    padding: 0rem;
+  }
 }
